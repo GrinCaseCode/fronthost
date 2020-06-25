@@ -63,6 +63,11 @@ $(document).ready(function() {
 			$(this).toggleClass("active");
 		});
 
+    $(".btn-add").click(function(e) {
+            e.preventDefault();
+            $(this).toggleClass("active");
+        });
+
 	//слайдер
 
 	$('.slider-wrap').each(function(){
