@@ -1898,6 +1898,7 @@ html.index {
 .slider-card-for__item {
 	padding: 54px 15px;
 	height: 600px;
+	position: relative;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -2199,6 +2200,26 @@ select::-ms-expand {
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+}
+.btn-add::after {
+	position: absolute;
+	display: block;
+	content: " ";
+	width: 60px;
+	top: 0;
+	left: 0;
+	height: 100%;
+	opacity: 0;
+	    background: url(../img/ic_heart.svg), linear-gradient(90deg, #FFB911 0%, #F14922 51.64%, #FFB911 104.36%);
+
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn-add.active::after {
+	opacity: 1;
 }
 .row_bottom-card a {
 	width: 100%;
