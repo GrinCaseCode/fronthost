@@ -2334,3 +2334,269 @@ select::-ms-expand {
     margin-bottom: 55px;
     text-transform: uppercase;
 }
+/*basket*/
+.item-basket {
+	padding-left: 240px;
+	padding-top: 25px;
+	margin-bottom: 45px;
+	min-height: 254px;
+	position: relative;
+}
+.item-basket__image {
+	width: 210px;
+	height: 254px;
+	padding: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #F2F4F5;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.item-basket__image img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.item-basket__name {
+	font-size: 14px;
+line-height: 25px;
+text-transform: uppercase;
+font-family: 'Montserrat Bold';
+color: #090A22;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+.quantity {
+	text-align: center;
+}
+.quantity-button {
+	width: 40px;
+	height: 40px;
+	color: #636480;
+	font-size: 20px;
+	border-radius: 50%;
+	border: 1px solid #EDEDED;
+	cursor: pointer;
+	background-color: transparent;
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+.quantity input {
+	font-size: 14px;
+line-height: 20px;
+height: 40px;
+color: #090A22;
+	text-align: center;
+	width: 35px;
+	border: none;
+	background-color: transparent;
+	display: inline-block;
+	vertical-align: middle;
+}
+.item-basket__top {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.name-basket {
+	font-size: 14px;
+line-height: 20px;
+padding-bottom: 10px;
+color: #636480;
+}
+.price-basket {
+	font-size: 14px;
+line-height: 20px;
+font-family: 'Montserrat Bold';
+color: #000000;
+}
+.btn-remove-basket {
+	width: 18px;
+	height: 19px;
+	position: absolute;
+	top: 40px;
+	right: 20px;
+	z-index: 2;
+	background-image: url(../img/ic_delate.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	display: inline-block;
+}
+.col_select-basket {
+	padding-left: 35px;
+}
+.col_size-basket .item-form {
+	max-width: 120px;
+}
+.item-basket__top {
+	padding-bottom: 25px;
+}
+.col_pr {
+	padding-right: 0;
+}
+.form-basket {
+	padding: 40px;
+	padding-bottom: 50px;
+	background-color: #F8F8FA;
+}
+.title-middle {
+	font-size: 28px;
+line-height: 34px;
+padding-bottom: 20px;
+text-transform: uppercase;
+color: #090A22;
+}
+.form-basket__price {
+	font-size: 14px;
+line-height: 17px;
+text-transform: uppercase;
+font-family: 'Montserrat Bold';/
+color: #090A22;
+}
+.form-basket__price span {
+	font-size: 28px;
+line-height: 34px;
+}
+.form-basket__amount {
+	font-size: 14px;
+line-height: 20px;
+color: #636480;
+}
+.form-basket__amount span {
+	color: #090A22;
+	margin-left: 5px;
+}
+.item-form_main input {
+	height: 60px;
+}
+.form-basket__descr {
+	font-size: 12px;
+line-height: 20px;
+margin-top: 10px;
+color: #636480;
+}
+.form-basket__descr a {
+	color: #FEB412;
+	border-bottom: 1px #FEB412 solid;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.form-basket__descr a:hover {
+	border-color: transparent;
+}
+.checkbox {
+	font-size: 14px;
+	text-align: left;
+	color: #636480;
+	display: block;
+	margin-top: 30px;
+}
+.checkbox label input {
+	position: absolute;
+	z-index: -1;
+	height: 1px !important;
+	width: 1px !important;
+	opacity: 0 !important;
+	margin: 1px 0 0 7px !important;
+}
+.checkbox label span {
+	position: relative;
+	padding: 4px 0 0 40px;
+	display: block;
+	cursor: pointer;
+}
+.checkbox label span:before {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	background-color: #000;
+	transition: .2s;
+}
+.checkbox label span:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 0px;
+	width: 20px;
+	height: 20px;
+	background-image: url(../img/check.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0;
+	transition: .2s;
+}
+.checkbox label input:checked + span:after {
+	opacity: 1;
+}
+.form-basket .item-form,
+.form-basket .btn-yellow {
+	margin-top: 40px;
+	width: 100%;
+}
+.available-bonus {
+	font-size: 14px;
+line-height: 20px;
+padding-left: 40px;
+padding-top: 5px;
+font-family: 'Montserrat Bold';
+color: #000000;
+}
+.line-price-form {
+	padding-top: 20px;
+}
+.text-sidebar p {
+	font-size: 14px;
+line-height: 26px;
+margin-bottom: 20px;
+color: #636480;
+}
+.text-sidebar p strong {
+	font-family: 'Montserrat Bold';
+}
+.text-sidebar p a {
+	color: #636480;
+	border-bottom: 1px #636480 solid;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.text-sidebar p a:hover {
+	border-color: transparent;
+}
+.text-sidebar {
+	padding: 40px;
+}
+.name-brand-basket {
+	font-size: 14px;
+line-height: 20px;
+color: #090A22;
+}
