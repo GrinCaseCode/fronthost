@@ -167,6 +167,39 @@ $(document).ready(function() {
         }]
     });
 
+    $(".section-card .slider-card-for").not('.slick-initialized').slick({
+          infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        asNavFor: '.section-card .slider-card-nav',
+    });
+
+      $(".section-card .slider-card-nav").not('.slick-initialized').slick({
+          infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: false,
+        vertical: true,
+  focusOnSelect: true,
+        asNavFor: '.section-card .slider-card-for',
+         responsive: [
+         {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+            }
+        },
+         {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3,
+               vertical: false,
+            }
+        }
+        ]
+    });
+
     
 
 
@@ -211,22 +244,22 @@ var $status = $('.counter-slider');
         asNavFor: '.slider-look-modal',
     });
 
-     $(".slider-card-for").not('.slick-initialized').slick({
+     $(".modal-wrap .slider-card-for").not('.slick-initialized').slick({
 		  infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
-        asNavFor: '.slider-card-nav',
+        asNavFor: '.modal-wrap .slider-card-nav',
     });
 
-      $(".slider-card-nav").not('.slick-initialized').slick({
+      $(".modal-wrap .slider-card-nav").not('.slick-initialized').slick({
 		  infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         dots: false,
         vertical: true,
   focusOnSelect: true,
-        asNavFor: '.slider-card-for',
+        asNavFor: '.modal-wrap .slider-card-for',
          responsive: [{
             breakpoint: 992,
             settings: {
@@ -254,8 +287,8 @@ $(".fancybox").fancybox({
 			$(".slider-card-brands").slick('setPosition');
 		},
 		beforeShow : function(){
-			$(".slider-card-for").slick('setPosition');
-			$(".slider-card-nav").slick('setPosition');
+			$(".modal-wrap .slider-card-for").slick('setPosition');
+			$(".modal-wrap .slider-card-nav").slick('setPosition');
 		}
 	});
 

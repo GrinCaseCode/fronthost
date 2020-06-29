@@ -1139,6 +1139,15 @@ div.today{width: calc(50% - 15px);}
 .text-sidebar {
     padding: 40px 30px;
 }
+.section-card .slider-card-nav {
+    height: 410px;
+}
+.section-card .slider-card-for__item {
+    height: 500px;
+}
+.col_right-card {
+    padding-left: 15px;
+}
 }
 @media only screen and (max-width: 992px){
 .hidden_mob {
@@ -1379,6 +1388,77 @@ div.today{width: calc(50% - 15px);}
 .bonus_container {
     display: none;
 }
+.specialist_help {
+    margin-top: 250px;
+    padding: 255px 30px 30px;
+    width: 100%;
+}
+.specialist_help {
+    padding: 55px 255px 60px 50px;
+}
+.specialist_help{
+    margin-top: 160px;
+    padding: 145px 30px 30px;
+}
+    .specialist_help:before{
+        background-size: 100% auto;
+        height: 290px;
+        left: calc(50% - 145px);
+        top: -175px;
+        width: 290px;
+    }
+    .specialist_help .btn{max-width: 100%;}
+        .specialist_help .btn span{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+
+        .section-card .slider-card-nav {
+            height: auto;
+        }
+        .section-card .slider-card-for__item {
+            height: 392px;
+        }
+        .section-card .wrap-slider-for {
+            width: 100%;
+        }
+        .row_links-card {
+            text-align: center;
+            padding-top: 10px;
+        }
+        .row_links-card a {
+            margin-top: 30px;
+        }
+        .link_dashed::after {
+            margin-left: 6px;   
+        }
+        .description-card .title-section {
+            padding-top: 46px;
+            padding-bottom: 20px;
+        }
+        .section-catalog_recomend .head-section {
+            padding: 40px 0;
+        }
+        .section-catalog_recomend .head-section .title-section {
+            padding: 0;
+        }
+        .section-help {
+    padding-top: 30px;
+}
+ .section-help .specialist_help {
+    margin-bottom: 60px;
+}
+.modal-wrap_detale {
+    padding: 35px 15px;
+}
+.row_bottom-card {
+    text-align: center;
+}
+}
+
+@media only screen and (max-width: 480px){
+
 }
 @media only screen and (min-width: 992px){
 .slider-nav-modal {
