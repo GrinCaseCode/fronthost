@@ -3109,3 +3109,8 @@ display: block;
 .item-form select {
 	padding-right: 35px !important;
 }
+.modal-wrap .text-sidebar {
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 60px;
+}
