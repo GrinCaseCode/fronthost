@@ -201,7 +201,17 @@ $(document).ready(function() {
     });
 
     
-
+$('.type-checks li a').click(function(event) {
+        event.preventDefault();
+    });
+    $('.tabs-type__pane:first').show();
+    $('.type-checks li').click(function(event) {
+        $(this).parent().find("li").removeClass('active');
+        $(this).addClass('active');
+        $(".tabs-type__pane").hide();
+        var selectTab = $(this).find('a').attr("href");
+        $(selectTab).fadeIn();
+    });
 
 
 	//Попап менеджер FancyBox
@@ -327,6 +337,11 @@ $(".fancybox").fancybox({
 
 	objectFitImages()
 
+});
+
+$(window).on('load', function(){
+
+    $('.total-list').jScrollPane();
 });
 
 /*polifyl*/
