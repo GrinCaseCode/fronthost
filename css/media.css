@@ -1710,10 +1710,21 @@ a.show-mobile {
 }
 .sidebar-lk__btn {
     position: absolute;
-    top: 25px;
+    top: 5px;
+    right: 0;
+    width: 98px;
+    height: 42px;
+}
+.sidebar-lk__btn::after {
+        position: absolute;
+        display: block;
+        content: "";
+    top: 10px;
     right: 0;
     width: 5px;
     height: 5px;
+    bottom: 0;
+    margin: auto;
     border: 5px transparent solid;
     border-top: 5px #B7B7B7 solid;
 }
@@ -1724,6 +1735,9 @@ a.show-mobile {
     -webkit-transition: none;
     -o-transition: none;
     transition: none;
+}
+.list-brand__item:nth-child(n+7) {
+    display: none;
 }
 }
 
