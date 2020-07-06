@@ -32,6 +32,8 @@ $(document).ready(function() {
             });
 
 
+$(".input-phone").mask("+7(999) 999-99-99");
+
 
 	$('.menu_btn').click(function () {
         $('.overlay,.mob_menu_container').fadeToggle();
@@ -68,6 +70,43 @@ $(document).ready(function() {
             $(this).toggleClass("active");
         });
 
+
+$(".list-brand__link").click(function(e) {
+            e.preventDefault();
+            $(this).toggleClass("active");
+        });
+
+$(".sidebar-lk__btn").click(function(e) {
+            e.preventDefault();
+            if ($(".sidebar-lk__item:not('.active')").is(":hidden")) {
+            $(".sidebar-lk__item:not('.active')").slideDown(200);
+        } else {
+           $(".sidebar-lk__item:not('.active')").slideUp(200);
+        }
+        });
+
+/*image profile*/
+    var readURL = function(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('.image-profile__pic').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $(".image-profile__input").on('change', function(){
+        readURL(this);
+        var filename = $(this).val().replace(/.*\\/, "");
+        if( $('.image-profile__pic').attr('src') != ''){
+
+        }else {
+            $(".image-profile").addClass("active");
+        }
+    });
 	//слайдер
 
 	$('.slider-wrap').each(function(){
