@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/datetimepicker/bootstrap-datetimepicker.min.css" />
+	<link rel="stylesheet" href="libs/jscrollpane/jquery.jscrollpane.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.50" />
+	<link rel="stylesheet" href="css/media.css?ver=1.50" />
+</head>
+<body>
+
+	<div class="wrapper-page">
+		
+		<div class="header_container">
+			<div class="header">
+				<a href="/" class="logo"></a>
+				<a href="https://www.instagram.com/origamiclub.ru/" target="_blank" class="inst"></a>
+				<div class="header_content">
+					<div class="header_right">
+						<div class="menu_container">
+							<ul class="second_nav">
+								<li><a href="/news/">Новости</a></li>
+							</ul><!-- END main_nav -->
+							<ul class="main_nav">
+								<li><a href="/shops/">интернет-Магазины</a></li>
+								<li><a href="/wardrobe/">Образы</a></li>
+								<li><a href="/brands/">О брендах</a></li>
+								<li><a href="/club_origami/">Клуб ORIGAMI</a></li>
+								<li><a href="/shops/">Магазины</a></li>
+								
+							</ul><!-- END main_nav -->
+						</div><!-- END menu_container -->
+						<a href="#" class="main-header__button main-header__button_basket"></a>
+						<form action="/search/" class="search_form ">
+							<span class="search_form_open"></span><input name="q" type="text" class="search_text" placeholder="с нами всегда проще найти ..." value="">
+							<input name="s" type="submit" class="search" value="">
+						</form><!-- END form_search -->
+						<div class="dropdown_container">
+							<div id="v-personal-link">
+								<a href="javascript:void(0)" class="btn small"><span>Личный кабинет</span></a>
+							</div>
+						</div><!-- END dropdown_container -->
+					</div><!-- END header_right -->
+					<div class="mob">
+						<ul class="main_nav">
+							<li><a href="/shops/">Магазины</a></li>
+							<li><a href="/brands/">Бренды</a></li>
+							<li><a href="/wardrobe/">Образы</a></li>
+							<li><a href="/club_origami/">Клуб ORIGAMI</a></li>
+						</ul><!-- END main_nav -->
+					</div><!-- END mob -->
+				</div><!-- END header_content -->
+				<span class="mob menu_btn"></span>
+				<div class="mob_menu_container mob">
+					<ul class="main_nav">
+						<li><a href="/shops/">Магазины</a></li>
+						<li><a href="/brands/">Бренды</a></li>
+						<li><a href="/wardrobe/">Образы</a></li>
+						<li><a href="/club_origami/">Клуб ORIGAMI</a></li>
+					</ul><!-- END main_nav -->
+					<ul class="second_nav">
+						<li><a href="/news/">Новости</a></li>
+						<li><a href="/career/">Вакансии</a></li>
+					</ul><!-- END main_nav -->
+					<form action="/search/" class="search_form active">
+						<input name="q" type="text" class="search_text" placeholder="с нами всегда проще найти ..." value="">
+						<input name="s" type="submit" class="search" value="">
+					</form><!-- END form_search -->
+					<div id="v-mob-personal-link" class="dropdown_container">
+						<a href="javascript:void(0)" class="btn middle"><span>Личный кабинет</span></a>
+					</div>
+					<div class="footer_links">
+						<a href="https://www.instagram.com/origamiclub.ru/" target="_blank" class="ico_1">подписывайтесь на нас в instagram и следите за
+						новостями</a>               
+					</div><!-- END footer_links -->
+				</div><!-- END mob_menu_container -->
+			</div><!-- END header -->
+		</div>
+
+		<div class="bonus_container">
+			<div class="wrapper">
+				<p>Купите 3 вещи и получите скидку 40% на 4 вещь</p>
+				<a href="#" class="bonus_btn">Узнать подробнее</a>
+			</div>
+		</div>
+
+		<div class="container">
+			<p class="breadcrumbs"><a href="/" title="Главная">Главная</a></p>
+		</div>
+
+		<div class="section-lk">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-2 col-lg-3">
+						<div class="sidebar-lk">
+							<div class="sidebar-lk__btn"></div>
+							<a href="#" class="sidebar-lk__item active">на стадии разработки <br><strong>Статус и предложения</strong></a>
+							<a href="#" class="sidebar-lk__item">узнавайте о Ваших скидках и предложениях <br><strong>Моя информация</strong></a>
+							<a href="#" class="sidebar-lk__item">на стадии разработки <br><strong>История покупок</strong></a>
+						</div>
+					</div>
+					<div class="col-xl-10 col-lg-9">
+						<h1 class="title-section title-section_page">Статус и предложения</h1>
+						<div class="status-lk">
+							<div class="row">
+								<div class="col-xl-5 col-lg-12">
+									<div class="d_flex">
+										<div class="status-lk__icon">E A</div>
+										<div class="status-lk__info">
+											<div class="status-lk__name">Евгения Мартуковичева</div>
+											<div class="status-lk__phone">+7 925 558 82 11</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-8">
+									<div class="status-lk__title-level">Уровень участника</div>
+									<div class="status-lk__level">startup</div>
+									<div class="progress-block">
+										<div class="align_right">
+											<div class="progress-block__title">28 050 ₽. до след. уровня</div>
+										</div>
+										<div class="progress">
+											<div class="progress__line" style="width: 0%;"></div>
+										</div>
+										<div class="progress-block__bottom">
+											<div class="progress-block__value">
+												<strong>0 ₽</strong>
+												<span>StartUp</span>
+											</div>
+											<div class="progress-block__value">
+												<strong>80 000 ₽</strong>
+												<span>Image</span> 
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 col-lg-4">
+									<div class="status-action">
+										<div class="status-action__image">
+											<img src="img/img_discount.jpg" alt="alt">
+										</div>
+										<div class="status-action__title">Скидка 3%</div>
+										<p>Узнайте больше <br>о статусах и <br>привелегиях карты</p>
+										<a href="#" class="link link_main">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs-lk-wrap">
+							<ul class="tabs-lk">
+								<li class="active">
+									<a href="#tab-lk-1">Предложения для меня</a>
+								</li>
+								<li>
+									<a href="#tab-lk-2">Предложения для всех</a>
+								</li>
+							</ul>
+							<div class="tabs-lk-icon"></div>
+						</div>
+						<div class="tabs-container-lk">
+							<div id="tab-lk-1" class="tabs-container-lk__pane">
+								<ul class="slider-offer-lk arrows_main">
+									<li>
+										<div class="slider-offer-lk__item">
+											<div class="row">
+												<div class="col-xl-7 col-lg-12 col_left-tablk">
+													<div class="image-tab-lk">
+														<img src="img/tab_lk1.jpg" alt="alt">
+													</div>
+												</div>
+												<div class="col-xl-5 col-lg-12 tablet_flex">
+													<div class="title-section">Новое представление о старых вещах</div>
+													<a href="#modal-banner" class="btn-main btn-main_standart fancybox"><span>Подробнее</span></a>
+													<div class="btns-estimate">
+														<a href="#" class="btn-estimate btn-estimate_like active"><span class="btn-estimate__icon"></span>Интересно</a>
+														<a href="#" class="btn-estimate btn-estimate_dislike"><span class="btn-estimate__icon"></span>Не интересно</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="slider-offer-lk__item">
+											<div class="row">
+												<div class="col-xl-7 col-lg-12 col_left-tablk">
+													<div class="image-tab-lk">
+														<img src="img/tab_lk1.jpg" alt="alt">
+													</div>
+												</div>
+												<div class="col-xl-5 col-lg-12 tablet_flex">
+													<div class="title-section">Новое представление о старых вещах</div>
+													<a href="#modal-banner" class="btn-main btn-main_standart fancybox"><span>Подробнее</span></a>
+													<div class="btns-estimate">
+														<a href="#" class="btn-estimate btn-estimate_like active"><span class="btn-estimate__icon"></span>Интересно</a>
+														<a href="#" class="btn-estimate btn-estimate_dislike"><span class="btn-estimate__icon"></span>Не интересно</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div id="tab-lk-2" class="tabs-container-lk__pane">
+								<ul class="slider-offer-lk arrows_main">
+									<li>
+										<div class="slider-offer-lk__item">
+											<div class="row">
+												<div class="col-xl-7 col-lg-12 col_left-tablk">
+													<div class="image-tab-lk">
+														<img src="img/tab_lk1.jpg" alt="alt">
+													</div>
+												</div>
+												<div class="col-xl-5 col-lg-12 tablet_flex">
+													<div class="title-section">Новое 2 представление о старых вещах</div>
+													<a href="#modal-banner" class="btn-main btn-main_standart fancybox"><span>Подробнее</span></a>
+													<div class="btns-estimate">
+														<a href="#" class="btn-estimate btn-estimate_like active"><span class="btn-estimate__icon"></span>Интересно</a>
+														<a href="#" class="btn-estimate btn-estimate_dislike"><span class="btn-estimate__icon"></span>Не интересно</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="slider-offer-lk__item">
+											<div class="row">
+												<div class="col-xl-7 col-lg-12 col_left-tablk">
+													<div class="image-tab-lk">
+														<img src="img/tab_lk1.jpg" alt="alt">
+													</div>
+												</div>
+												<div class="col-xl-5 col-lg-12 tablet_flex">
+													<div class="title-section">Новое представление о старых вещах</div>
+													<a href="#modal-banner" class="btn-main btn-main_standart fancybox"><span>Подробнее</span></a>
+													<div class="btns-estimate">
+														<a href="#" class="btn-estimate btn-estimate_like active"><span class="btn-estimate__icon"></span>Интересно</a>
+														<a href="#" class="btn-estimate btn-estimate_dislike"><span class="btn-estimate__icon"></span>Не интересно</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row align-items-center">
+							<div class="col-xl-6">
+								<div class="bouns-lk">
+									<div class="bouns-lk__title"><span>0</span>бонусов</div>
+									<a href="#" class="link link_main">Подробнее о бонусах</a>
+									<div class="bouns-lk__image">
+										<img src="img/img_bonus_lk.jpg" alt="alt">
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-6">
+								<div class="bouns-lk bouns-lk_card">
+									<div class="bouns-lk__title">Виртуальная карта</div>
+									<a href="#modal-card" class="btn-main btn-main_standart fancybox"><span>Получить карту</span></a>
+									<div class="bouns-lk__image">
+										<img src="img/img_bonus_lk2.jpg" alt="alt">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row row_privilege">
+							<div class="col-xl-6">
+								<div class="privilege">
+									<div class="privilege__title">Активные привилегии </div>
+									<div class="text-min">При накоплении покупок на сумму 80.000 рублей (сумму покупок необходимо подтверждать каждый год)</div>
+									<ul class="privilege__list">
+										<li>Для получения базовой скидки необходимо накопить 15 000 рублей на карте</li>
+										<li>Скидка от 3 до 6%</li>
+										<li>Дополнительная скидка на день рождения</li>
+										<li>Оплата бонусами от стоимости покупки 20%</li>
+									</ul>
+									<a href="#" class="link link_main">Посмотреть все привилегии</a>
+								</div>
+							</div>
+							<div class="col-xl-6">
+								<div class="privilege">
+									<div class="privilege__title">Избранное</div>
+									<div class="row align-items-center">
+										<div class="col-lg-7">
+											<div class="privilege__image">
+												<img src="img/privilege1.png" alt="alt">
+											</div>
+										</div>
+										<div class="col-lg-5">
+											<div class="text-min">Все что вы отобрали <br>в одном месте.</div>
+											<div class="text-min">Смотрите, <br>представляйте, <br>покупайте.</div>
+											<a href="#" class="link link_main">Посмотреть</a>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+
+	</div>
+
+	<div class="container">
+		<div class="footer">
+			<div class="footer_column">
+				<a href="/" class="footer_logo"></a>
+			</div><!-- END footer_column -->
+
+
+			<ul class="footer_nav">
+				<li>
+					<a href="/shops/">Интернет-магазин</a>
+				</li>
+				<li>
+					<a href="/shops/">Магазины</a>
+				</li>
+				<li>
+					<a href="/brands/">о брендах</a>
+				</li>
+				<li>
+					<a href="/club_origami/">Клуб оригами</a>
+				</li>
+				<li>
+					<a href="/trends/">Мой гардероб</a>
+				</li>
+			</ul><!-- END footer_menu -->
+
+
+
+			<ul class="footer_nav second">
+				<li>
+					<a href="/news/"></a>
+				</li>
+			</ul><!-- END footer_menu -->
+
+			<!-- END footer_nav -->
+			<div class="footer_links">
+				<a href="https://www.instagram.com/origamiclub.ru/" target="_blank" class="ico_1">подписывайтесь на нас в instagram и следите за
+				новостями</a>            <a href="http://itrack.ru/?utm_source=copyright&amp;utm_medium=cpc&amp;utm_campaign=origamigroup.ru" target="_blank" class="ico_2">Разработка сайта</a>
+			</div><!-- END footer_links -->
+		</div>
+	</div>
+
+	<div id="modal-delivery" class="modal-block">
+		<div class="modal-wrap">
+			<div class="text-sidebar">
+				<div class="title-middle">Доставка</div>
+				<p>Мы бесплатно доставим ваши покупки при сумме заказа <strong>больше 3 000 руб.</strong></p>
+				<p><strong>Доставка работает по Калининграду и Калининградской области.</strong> Подробнее о доставке прочитайте на странице <a href="#">“Условия доставки”</a></p>
+				<p>Про условия обмена и возврата товара написали на странице <a href="#">“Условия оплаты и возврата”</a></p>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal-banner" class="modal-block">
+		<div class="modal-wrap modal-wrap_banner">
+			<ul class="slider-banner arrows_main">
+				<li>
+					<div class="slider-banner__item">
+						<div class="slider-banner__image">
+							<img src="img/tab_lk1.jpg" alt="alt">
+						</div>
+						<div class="slider-banner__content">
+							<div class="title-section">Новое представление о старых вещах</div>
+							<div class="text-min">
+								<p>Для получения скидки за подписку на Origami, прикрепите свой профиль к аккаунту на странице “Социальные профили” и подпишитесь на нас в Instagram. Для получения скидки за подписку на Origami, прикрепите свой профиль к аккаунту на странице “Социальные профили” и подпишитесь на нас в Instagram</p>
+							</div>
+							<div class="btns-estimate">
+								<a href="#" class="btn-estimate btn-estimate_like active"><span class="btn-estimate__icon"></span>Интересно</a>
+								<a href="#" class="btn-estimate btn-estimate_dislike"><span class="btn-estimate__icon"></span>Не интересно</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="slider-banner__item">
+						<div class="slider-banner__image">
+							<img src="img/tab_lk1.jpg" alt="alt">
+						</div>
+						<div class="slider-banner__content">
+							<div class="title-section">Новое представление о старых вещах</div>
+							<div class="text-min">
+								<p>Для получения скидки за подписку на Origami, прикрепите свой профиль к аккаунту на странице “Социальные профили” и подпишитесь на нас в Instagram. Для получения скидки за подписку на Origami, прикрепите свой профиль к аккаунту на странице “Социальные профили” и подпишитесь на нас в Instagram</p>
+							</div>
+							<div class="btns-estimate">
+								<a href="#" class="btn-estimate btn-estimate_like active"><span class="btn-estimate__icon"></span>Интересно</a>
+								<a href="#" class="btn-estimate btn-estimate_dislike"><span class="btn-estimate__icon"></span>Не интересно</a>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="modal-card" class="modal-block">
+		<div class="modal-wrap modal-wrap_bonus-card">
+			<div class="title-simple">Виртуальная карта</div>
+			<form>
+				<div class="item-form">
+					<input type="text" value="5558 - 228 - 66ew - 22wQ">
+				</div>
+				<div class="d_flex">
+					<a href="#" class="link link_main">Удалить карту </a>
+					<a href="#" class="link-text">Подробнее об условиях использования</a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/datetimepicker/moment-with-locales.js"></script>
+<script src="libs/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+<script src="libs/jscrollpane/jquery.jscrollpane.min.js"></script>
+<script src="libs/mask/jquery.maskedinput.js"></script>
+<script src="js/common.js?ver=1.50"></script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

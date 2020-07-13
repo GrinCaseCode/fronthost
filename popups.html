@@ -1,0 +1,284 @@
+	<!DOCTYPE html>
+	<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+	<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+	<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+	<!--[if gt IE 8]><!-->
+	<html lang="ru">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Заголовок</title>
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="favicon.png" />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+		<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+		<link rel="stylesheet" href="libs/datetimepicker/bootstrap-datetimepicker.min.css" />
+		<link rel="stylesheet" href="libs/jscrollpane/jquery.jscrollpane.css" />
+		<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+		<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="stylesheet" href="css/main.css?ver=1.50" />
+		<link rel="stylesheet" href="css/media.css?ver=1.50" />
+	</head>
+	<body>
+		<br>
+		<br>
+		<div class="container">
+			<a href="#signup" class="btn-main btn-main_standart fancybox"><span>Запись к стилисту</span></a>
+			<br>
+			<br>
+			<a href="#authorization" class="btn-main btn-main_standart fancybox"><span>Вход</span></a>
+			<br>
+			<br>
+			<a href="#thanks" class="btn-main btn-main_standart fancybox"><span>Спасибо за покупку</span></a>
+			<br>
+			<br>
+			<a href="#error-payment" class="btn-main btn-main_standart fancybox"><span>ошибка оплаты</span></a>
+			<br>
+			<br>
+			<a href="#return" class="btn-main btn-main_standart fancybox"><span>возврат или обмен</span></a>
+			<br>
+			<br>
+			<a href="#action-modal" class="btn-main btn-main_standart fancybox-right"><span>СКИДКА 1% ЗА РЕГИСТРАЦИЮ</span></a>
+		</div>
+
+		<div id="signup" class="modal-block">
+			<div class="modal-wrap modal-wrap_signup">
+				<form>
+					<div class="title-modal">Запись к стилисту</div>
+					<div class="text-modal text-modal_top">
+						<p>Подберите идеальный образ вместе со стилистом, оставаясь дома или в магазине.</p>
+						<p>Мы свяжемся с вами по телефону или в мессенджерах.</p>
+					</div>
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="item-form item-form_big">
+								<input type="text" placeholder="ФИО *" required="required">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="item-form item-form_big">
+								<input type="text" placeholder="Контактный телефон *" class="input-phone" required="required">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="item-form item-form_big item-form_data">
+								<input size="16" type="text" placeholder="Укажите дату консультации" class="input-date">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="item-form item-form_big item-form_select">
+								<select>
+									<option value="1">Желаемое время</option>
+									<option value="1">Желаемое время</option>
+									<option value="1">Желаемое время</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="text-modal">
+								<p>Укажите образ или лук, который вы хотели бы обсудить</p>
+							</div>
+							<div class="item-form item-form_big item-form_select">
+								<select>
+									<option value="1">Желаемое время</option>
+									<option value="1">Желаемое время</option>
+									<option value="1">Желаемое время</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="text-modal">
+								<p>Выберите способ, который наиболее комфортен для Вас</p>
+							</div>
+							<div class="radio radio_color">
+								<label>
+									<input type="radio" required="required" name="radio_way"/>
+									<span>Онлайн консультация</span>
+								</label>
+							</div>
+							<div class="radio radio_color">
+								<label>
+									<input type="radio" required="required" name="radio_way" checked="checked" />
+									<span>Консультации в магазине</span>
+								</label>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="item-form fl_upld item-form_big">
+								<label><input id="fl_inp" type="file" name="file"><span class="hidden-mobile">Вы можете загрузить фотографии для подбора аксессуара или образа</span> <span class="show-mobile">Прикрепить файл</span></label>
+								<div id="fl_nm" class="fl_upld-descr"></div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="item-form item-form_big item-form_select">
+								<select>
+									<option value="1">Магазин для консультации</option>
+									<option value="1">Магазин для консультации</option>
+									<option value="1">Магазин для консультации</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="item-form item-form_big item-form_select">
+								<select>
+									<option value="1">Укажите бюджет покупки</option>
+									<option value="1">Укажите бюджет покупки</option>
+									<option value="1">Укажите бюджет покупки</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-12">
+							<button class="btn-main btn-main_standart"><span>Отправить заявку</span></button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="authorization" class="modal-block">
+			<div class="modal-wrap modal-wrap_authorization">
+				<ul class="tabs-main">
+					<li class="active">
+						<a href="#tab-authorization-1">Вход</a>
+					</li>
+					<li>
+						<a href="#tab-authorization-2">Активация</a>
+					</li>
+					<li>
+						<a href="#tab-authorization-3">Регистрация</a>
+					</li>
+				</ul>
+				<div class="tabs-container">
+					<div id="tab-authorization-1" class="tabs-container__pane">
+						<div class="text">Зарегистрируйтесь и получайте бонусы, которыми можно оплачивать покупки</div>
+						<form>
+							<div class="item-form item-form_big">
+								<input type="text" placeholder="Ваше имя *" required="required">
+							</div>
+							<div class="item-form item-form_big">
+								<input type="text" placeholder="Контактный телефон *" class="input-phone" required="required">
+							</div>
+							<button class="btn-main btn-main_standart"><span>Написать отзыв</span></button>
+						</form>
+					</div>
+					<div id="tab-authorization-2" class="tabs-container__pane">
+						<div class="text">На ваш телефон отправлен код подтверждения, введите его</div>
+						<form>
+							<div class="item-form item-form_big">
+								<input type="text" placeholder="Контактный телефон *" class="input-phone" required="required">
+							</div>
+							<button class="btn-main btn-main_standart"><span>Написать отзыв</span></button>
+						</form>
+					</div>
+					<div id="tab-authorization-3" class="tabs-container__pane">
+						<div class="text">На ваш телефон отправлен код подтверждения, введите его</div>
+						<form>
+							<div class="item-form item-form_big">
+								<input type="text" placeholder="Код подтверждения *" required="required">
+							</div>
+							<button class="btn-main btn-main_standart"><span>Зарегистрироваться</span></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="thanks" class="modal-block">
+			<div class="modal-wrap modal-wrap_main">
+				<div class="title-modal">Спасибо за покупку</div>
+				<div class="text">Оплата прошла успешно, мы будем держать в курсе <br>о вашем заказе</div>
+			</div>
+		</div>
+
+		<div id="error-payment" class="modal-block">
+			<div class="modal-wrap modal-wrap_main">
+				<div class="title-modal">ошибка оплаты</div>
+				<div class="text">Извиняемся за техическую ошибку, попробуйте оформить заказ чуть позже или позвоните по контактному телефону, если данная ошибка возникнет снова</div>
+				<a href="tel:+7 958 226 3399" class="phone-modal">+7 958 226 3399</a>
+				<div class="text">Служба поддержки ORIGAMI</div>
+			</div>
+		</div>
+
+		<div id="return" class="modal-block">
+			<div class="modal-wrap modal-wrap_main">
+				<div class="title-modal">возврат или обмен</div>
+				<div class="text">Данные процедуры вы можете осуществить на кассе магазина в который вы заказали товар или по телефону</div>
+				<a href="tel:+7 958 226 3399" class="phone-modal">+7 958 226 3399</a>
+				<div class="text">Контактный телефон для отмены заказов</div>
+			</div>
+		</div>
+
+		<div id="action-modal" class="modal-block">
+			<div class="modal-wrap modal-wrap_action">
+				<div class="hidden-mobile">
+					<div class="item-action-modal active">
+						<div class="title-modal">СКИДКА 1% ЗА РЕГИСТРАЦИЮ</div>
+						<div class="text">В нашей системе появилась карта на ваш номер телефона. Используйте номер для авторизации на сайте. А карту можете получить в любом нашем магазине.</div>
+					</div>
+					<div class="item-action-modal">
+						<div class="title-modal">ПОЛУЧИТЕ СКИДКУ 1% ЗА ПОЧТУ</div>
+						<div class="text">Сохраните ниже свой email и мы подарим вам скидку 1% на все покупки</div>
+					</div>
+					<div class="item-action-modal">
+						<div class="title-modal">ПОЛУЧИТЕ СКИДКУ ЗА ПОДПИСКУ В INSTAGRAM</div>
+						<div class="text">В разделе “Социальные профили” перейдите по ссылке в Instagram и подпишитесь на наш профиль. а мы дадим вам скидку</div>
+					</div>
+				</div>
+				<div class="show-mobile slider-modal-wrapper">
+					<ul class="slider-modal-actions">
+						<li>
+							<div class="item-action-modal">
+								<div class="title-modal">СКИДКА 1% ЗА РЕГИСТРАЦИЮ</div>
+								<div class="text">В нашей системе появилась карта на ваш номер телефона. Используйте номер для авторизации на сайте. А карту можете получить в любом нашем магазине.</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-action-modal">
+								<div class="title-modal">ПОЛУЧИТЕ СКИДКУ 1% ЗА ПОЧТУ</div>
+								<div class="text">Сохраните ниже свой email и мы подарим вам скидку 1% на все покупки</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-action-modal">
+								<div class="title-modal">ПОЛУЧИТЕ СКИДКУ ЗА ПОДПИСКУ В INSTAGRAM</div>
+								<div class="text">В разделе “Социальные профили” перейдите по ссылке в Instagram и подпишитесь на наш профиль. а мы дадим вам скидку</div>
+							</div>
+						</li>
+					</ul>
+					<div class="controls">
+						<div class="controls-arrows"><div class="controls-dots"></div></div>
+					</div>
+				</div>
+				<a href="#" class="btn-yellow btn-yellow_action hidden-mobile">Следующая информация</a>
+				<div class="align_center">
+					<a href="#" class="link-action">Все понятно, можно пропустить</a>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!--[if lt IE 9]>
+		<script src="libs/html5shiv/es5-shim.min.js"></script>
+		<script src="libs/html5shiv/html5shiv.min.js"></script>
+		<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+		<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="libs/datetimepicker/moment-with-locales.js"></script>
+	<script src="libs/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+	<script src="libs/jscrollpane/jquery.jscrollpane.min.js"></script>
+	<script src="libs/mask/jquery.maskedinput.js"></script>
+	<script src="js/common.js?ver=1.50"></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

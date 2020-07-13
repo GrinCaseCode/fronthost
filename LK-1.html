@@ -16,12 +16,13 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
 	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/datetimepicker/bootstrap-datetimepicker.min.css" />
 	<link rel="stylesheet" href="libs/jscrollpane/jquery.jscrollpane.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.43" />
-	<link rel="stylesheet" href="css/media.css?ver=1.43" />
+	<link rel="stylesheet" href="css/main.css?ver=1.50" />
+	<link rel="stylesheet" href="css/media.css?ver=1.50" />
 </head>
 <body>
 
@@ -116,193 +117,195 @@
 						</div>
 					</div>
 					<div class="col-xl-10 col-lg-9">
-						<h1 class="title-section title-section_page">Моя информация</h1>
-						<div class="text text_lk-top">
-							<p>Для получения преимуществ и дополнительной скидки в клубе ORIGAMI просим вас заполнить анкету. <br>Вы получите дополнительный процент скидки за заполнение информации о себе</p>
-						</div>
-						<div class="row row_min">
-							<div class="col-xl-4 col-lg-6">
-								<div class="item-form item-form_big">
-									<input type="text" value="Мария " disabled="disabled" required="required">
-								</div>
+						<form>
+							<h1 class="title-section title-section_page">Моя информация</h1>
+							<div class="text text_lk-top">
+								<p>Для получения преимуществ и дополнительной скидки в клубе ORIGAMI просим вас заполнить анкету. <br>Вы получите дополнительный процент скидки за заполнение информации о себе</p>
 							</div>
-							<div class="col-xl-4 col-lg-6">
-								<div class="item-form item-form_big">
-									<input type="text" value="Аненкова " disabled="disabled" required="required">
-								</div>
-							</div>
-							<div class="col-xl-4 col-lg-6">
-								<div class="item-form item-form_big">
-									<input type="text" value="+7 925 556 8877 " disabled="disabled" class="input-phone" required="required">
-								</div>
-							</div>
-						</div>
-						<div class="row row_min align-items-center row_email-lk">
-							<div class="col-xl-4 col-lg-6">
-								<div class="text text_sale"><div class="icon-sale"></div>Электронная почта</div>
-								<div class="item-form item-form_big">
-									<input type="email" value="maria98@mail.ru " required="required">
-								</div>
-							</div>
-							<div class="col-xl-6 col-lg-6">
-								<div class="text text_right-sale">
-									<p>Получите дополнительный процент скидки за ответ на этот вопрос и покупку детской одежды в наших магазинах</p>
-								</div>
-							</div>
-						</div>
-						<div class="row row_min">
-							<div class="col-xl-4 col-lg-6">
-								<div class="item-action-lk">
-									<div class="title-min">Привяжите аккаунт<div class="icon-sale icon-sale_right"></div></div>
-									<div class="text">
-										<p>Привяжите аккаунт instagram к своей учетной записи и подпишитесь на наши обновления</p>
+							<div class="row row_min">
+								<div class="col-xl-4 col-lg-6">
+									<div class="item-form item-form_big">
+										<input type="text" value="Мария " disabled="disabled" required="required">
 									</div>
-									<a href="#" class="btn-insta">
-										<img src="img/ic_instag.svg" alt="alt">
-									</a>
 								</div>
-							</div>
-							<div class="col-xl-4 col-lg-6">
-								<div class="item-action-lk">
-									<div class="title-min">Подпишитесь на новости</div>
-									<div class="text">
-										<p>Чтобы получить привилегии за подписку, ваш аккаунт в Instagram должен быть привязан к учетной записи</p>
+								<div class="col-xl-4 col-lg-6">
+									<div class="item-form item-form_big">
+										<input type="text" value="Аненкова " disabled="disabled" required="required">
 									</div>
-									<a href="#" class="btn-main btn-main_standart">
-										<span>Подписаться на Instagram</span>
+								</div>
+								<div class="col-xl-4 col-lg-6">
+									<div class="item-form item-form_big">
+										<input type="text" value="+7 925 556 8877 " disabled="disabled" class="input-phone" required="required">
+									</div>
+								</div>
+							</div>
+							<div class="row row_min align-items-center row_email-lk">
+								<div class="col-xl-4 col-lg-6">
+									<div class="text text_sale"><div class="icon-sale"></div>Электронная почта</div>
+									<div class="item-form item-form_big">
+										<input type="email" value="maria98@mail.ru " required="required">
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-6">
+									<div class="text text_right-sale">
+										<p>Получите дополнительный процент скидки за ответ на этот вопрос и покупку детской одежды в наших магазинах</p>
+									</div>
+								</div>
+							</div>
+							<div class="row row_min">
+								<div class="col-xl-4 col-lg-6">
+									<div class="item-action-lk">
+										<div class="title-min">Привяжите аккаунт<div class="icon-sale icon-sale_right"></div></div>
+										<div class="text">
+											<p>Привяжите аккаунт instagram к своей учетной записи и подпишитесь на наши обновления</p>
+										</div>
+										<a href="#" class="btn-insta">
+											<img src="img/ic_instag.svg" alt="alt">
+										</a>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-6">
+									<div class="item-action-lk">
+										<div class="title-min">Подпишитесь на новости</div>
+										<div class="text">
+											<p>Чтобы получить привилегии за подписку, ваш аккаунт в Instagram должен быть привязан к учетной записи</p>
+										</div>
+										<a href="#" class="btn-main btn-main_standart">
+											<span>Подписаться на Instagram</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="checkbox checkbox_main">
+								<label>
+									<input type="checkbox" required="required" checked="checked" />
+									<span>Подписка на уведолмения об акциях <div class="icon-sale icon-sale_right"></div></span>
+								</label>
+							</div>
+							<div class="checkbox-descr">вы можете выбрать один или несколько магазинов, предложения которых будут приходить вам в уведомлениях</div>
+							<ul class="list-brand">
+								<li class="list-brand__item">
+									<a href="#" class="list-brand__link">
+										<img src="img/brand1.png" alt="alt">
 									</a>
+								</li>
+								<li class="list-brand__item">
+									<a href="#" class="list-brand__link">
+										<img src="img/brand1.png" alt="alt">
+									</a>
+								</li>
+								<li class="list-brand__item">
+									<a href="#" class="list-brand__link">
+										<img src="img/brand1.png" alt="alt">
+									</a>
+								</li>
+								<li class="list-brand__item">
+									<a href="#" class="list-brand__link">
+										<img src="img/brand1.png" alt="alt">
+									</a>
+								</li>
+								<li class="list-brand__item">
+									<a href="#" class="list-brand__link">
+										<img src="img/brand1.png" alt="alt">
+									</a>
+								</li>
+								<li class="list-brand__item">
+									<a href="#" class="list-brand__link">
+										<img src="img/brand1.png" alt="alt">
+									</a>
+								</li>
+								<li class="list-brand__item">
+									<a href="#" class="list-brand__link">
+										<img src="img/brand1.png" alt="alt">
+									</a>
+								</li>
+								<li class="list-brand__item">
+									<a href="#" class="list-brand__link">
+										<img src="img/brand1.png" alt="alt">
+									</a>
+								</li>
+								<li class="list-brand__item">
+									<a href="#" class="list-brand__link">
+										<img src="img/brand1.png" alt="alt">
+									</a>
+								</li>
+								<li class="list-brand__item">
+									<a href="#" class="list-brand__link">
+										<img src="img/brand1.png" alt="alt">
+									</a>
+								</li>
+							</ul>
+							<div class="title-input">адрес</div>
+							<div class="row row_inputs-lk">
+								<div class="col-xl-4 col-lg-6 col-xl-4_min">
+									<div class="item-form item-form_big">
+										<input type="text" placeholder="Город " required="required">
+									</div>
+								</div>
+								<div class="col-xl-5 col-lg-6 col-xl-5_min">
+									<div class="item-form item-form_big">
+										<input type="text" placeholder="Улица " required="required">
+									</div>
+								</div>
+								<div class="col-lg-2 col-lg-2_min col-6">
+									<div class="item-form item-form_big">
+										<input type="text" placeholder="Дом " required="required">
+									</div>
+								</div>
+								<div class="col-xl-2 col-lg-3 col-lg-2_small col-6">
+									<div class="item-form item-form_big">
+										<input type="text" placeholder="Квартира " required="required">
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="checkbox checkbox_main">
-							<label>
-								<input type="checkbox" required="required" checked="checked" />
-								<span>Подписка на уведолмения об акциях <div class="icon-sale icon-sale_right"></div></span>
-							</label>
-						</div>
-						<div class="checkbox-descr">вы можете выбрать один или несколько магазинов, предложения которых будут приходить вам в уведомлениях</div>
-						<ul class="list-brand">
-							<li class="list-brand__item">
-								<a href="#" class="list-brand__link">
-									<img src="img/brand1.png" alt="alt">
-								</a>
-							</li>
-							<li class="list-brand__item">
-								<a href="#" class="list-brand__link">
-									<img src="img/brand1.png" alt="alt">
-								</a>
-							</li>
-							<li class="list-brand__item">
-								<a href="#" class="list-brand__link">
-									<img src="img/brand1.png" alt="alt">
-								</a>
-							</li>
-							<li class="list-brand__item">
-								<a href="#" class="list-brand__link">
-									<img src="img/brand1.png" alt="alt">
-								</a>
-							</li>
-							<li class="list-brand__item">
-								<a href="#" class="list-brand__link">
-									<img src="img/brand1.png" alt="alt">
-								</a>
-							</li>
-							<li class="list-brand__item">
-								<a href="#" class="list-brand__link">
-									<img src="img/brand1.png" alt="alt">
-								</a>
-							</li>
-							<li class="list-brand__item">
-								<a href="#" class="list-brand__link">
-									<img src="img/brand1.png" alt="alt">
-								</a>
-							</li>
-							<li class="list-brand__item">
-								<a href="#" class="list-brand__link">
-									<img src="img/brand1.png" alt="alt">
-								</a>
-							</li>
-							<li class="list-brand__item">
-								<a href="#" class="list-brand__link">
-									<img src="img/brand1.png" alt="alt">
-								</a>
-							</li>
-							<li class="list-brand__item">
-								<a href="#" class="list-brand__link">
-									<img src="img/brand1.png" alt="alt">
-								</a>
-							</li>
-						</ul>
-						<div class="title-input">адрес</div>
-						<div class="row row_inputs-lk">
-							<div class="col-xl-4 col-lg-6 col-xl-4_min">
-								<div class="item-form item-form_big">
-									<input type="text" placeholder="Город " required="required">
+							<br>
+							<div class="title-input">Дополнительные контактные телефоны</div>
+							<div class="row">
+								<div class="col-xl-6 col-lg-10">
+									<div class="text-min">Вы можете добавить до двух дополнительных номеров телефона. Указанные номера могут быть использованы членами вашей семьи для получения сидки, накопления баллов и покупок по вашей карте</div>
 								</div>
 							</div>
-							<div class="col-xl-5 col-lg-6 col-xl-5_min">
-								<div class="item-form item-form_big">
-									<input type="text" placeholder="Улица " required="required">
+							<div class="row row_phone-lk">
+								<div class="col-xl-6 col-lg-8">
+									<div class="item-form item-form_big">
+										<input type="text" placeholder="+7 (123) 456 7899" class="input-phone" required="required">
+										<div class="item-form__descr">например +7 922 588 1231</div>
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-4">
+									<a href="#" class="link link_main">Добавить еще телефон</a>
 								</div>
 							</div>
-							<div class="col-lg-2 col-lg-2_min col-6">
-								<div class="item-form item-form_big">
-									<input type="text" placeholder="Дом " required="required">
+							<div class="image-profile">
+								<div class="image-profile__img">
+									<img class="image-profile__pic" src="" />
+								</div>
+								<label class="image-profile__label">
+									<input class="image-profile__input" type="file" accept="image/*"/>
+									<span>
+										<span class="image-profile__name">Загрузить аватар пользователя</span>
+										<span class="image-profile__descr">Изображение должно быть не более 940 кб и быть в формате jpg, png, bmp</span>
+										<span class="link link_main">Загрузить аватар</span>
+									</span>
+								</label>
+							</div>
+							<div class="title-input">Изменение пароля</div>
+							<div class="row row_min">
+								<div class="col-xl-4 col-lg-6">
+									<div class="item-form item-form_big">
+										<div class="item-form_top-descr">Новый пароль</div>
+										<input type="password" required="required">
+										<div class="item-form__descr">пароль должен быть не менее 6 символов</div>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-6">
+									<div class="item-form item-form_big">
+										<div class="item-form_top-descr">Подтверждение нового пароля</div>
+										<input type="password" required="required">
+									</div>
 								</div>
 							</div>
-							<div class="col-xl-2 col-lg-3 col-lg-2_small col-6">
-								<div class="item-form item-form_big">
-									<input type="text" placeholder="Квартира " required="required">
-								</div>
-							</div>
-						</div>
-						<br>
-						<div class="title-input">Дополнительные контактные телефоны</div>
-						<div class="row">
-							<div class="col-xl-6 col-lg-10">
-								<div class="text-min">Вы можете добавить до двух дополнительных номеров телефона. Указанные номера могут быть использованы членами вашей семьи для получения сидки, накопления баллов и покупок по вашей карте</div>
-							</div>
-						</div>
-						<div class="row row_phone-lk">
-							<div class="col-xl-6 col-lg-8">
-								<div class="item-form item-form_big">
-									<input type="text" placeholder="+7 (123) 456 7899" class="input-phone" required="required">
-									<div class="item-form__descr">например +7 922 588 1231</div>
-								</div>
-							</div>
-							<div class="col-xl-6 col-lg-4">
-								<a href="#" class="link link_main">Добавить еще телефон</a>
-							</div>
-						</div>
-						<div class="image-profile">
-							<div class="image-profile__img">
-								<img class="image-profile__pic" src="" />
-							</div>
-							<label class="image-profile__label">
-								<input class="image-profile__input" type="file" accept="image/*"/>
-								<span>
-									<span class="image-profile__name">Загрузить аватар пользователя</span>
-									<span class="image-profile__descr">Изображение должно быть не более 940 кб и быть в формате jpg, png, bmp</span>
-									<span class="link link_main">Загрузить аватар</span>
-								</span>
-							</label>
-						</div>
-						<div class="title-input">Изменение пароля</div>
-						<div class="row row_min">
-							<div class="col-xl-4 col-lg-6">
-								<div class="item-form item-form_big">
-									<div class="item-form_top-descr">Новый пароль</div>
-									<input type="password" required="required">
-									<div class="item-form__descr">пароль должен быть не менее 6 символов</div>
-								</div>
-							</div>
-							<div class="col-xl-4 col-lg-6">
-								<div class="item-form item-form_big">
-									<div class="item-form_top-descr">Подтверждение нового пароля</div>
-									<input type="password" required="required">
-								</div>
-							</div>
-						</div>
+						</form>
 					</div>
 				</div>
 				
@@ -373,10 +376,12 @@
 <script src="libs/jquery/jquery-1.11.1.min.js"></script>
 <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
 <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/datetimepicker/moment-with-locales.js"></script>
+<script src="libs/datetimepicker/bootstrap-datetimepicker.min.js"></script>
 <script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 <script src="libs/jscrollpane/jquery.jscrollpane.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
-<script src="js/common.js?ver=1.43"></script>
+<script src="js/common.js?ver=1.50"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
