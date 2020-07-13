@@ -8,7 +8,7 @@
 }
 *::-moz-placeholder {
 	color: #666;
-	opacity: 1;
+	opacity: 1; 
 }
 *:-ms-input-placeholder {
 	color: #666;
@@ -49,7 +49,7 @@ a {
 }
 ul {
 	padding: 0;
-	margin: 0;
+	margin: 0; 
 }
 ul li {
 	list-style-type: none;

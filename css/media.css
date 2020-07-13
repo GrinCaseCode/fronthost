@@ -9,7 +9,7 @@
 .my_prev.slick-arrow{right: 107px;}
 .steps_container{}
 .steps{
-    height: 292px;
+    height: 292px; 
     width: calc(50% - 15px);
 }
 .steps:before,.steps:after,.steps_block{display: none;}
