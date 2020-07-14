@@ -4666,7 +4666,7 @@ color: #636480;
 	height: auto;
 }
 .image-modal {
-	max-width: 200px;
+	max-width: 100%;
 	max-height: 200px;
 }
 .image-modal img {
