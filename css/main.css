@@ -4656,3 +4656,22 @@ color: #636480;
 .item-product:hover .item-product__image img {
 	transform: scale(1.1);
 }
+.link-social {
+	margin-left: 30px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.link-social img {
+	max-width: 40px;
+	height: auto;
+}
+.image-modal {
+	max-width: 200px;
+	max-height: 200px;
+}
+.image-modal img {
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+	display: block;
+}
