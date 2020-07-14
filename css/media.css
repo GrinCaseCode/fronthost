@@ -1597,6 +1597,7 @@ div.today{width: calc(50% - 15px);}
             height: auto;
         }
         .section-card .slider-card-for__item {
+            max-width: 100%;
             height: 392px;
         }
         .section-card .wrap-slider-for {
@@ -2233,7 +2234,11 @@ color: #090A22;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
+.row_catalog .item-product,
+.row_catalog .item-look {
+    margin-left: auto;
+    margin-right: auto;
+}
 }
 
 

@@ -2606,6 +2606,8 @@ input[type=number]
 }
 .section-card .slider-card-for__item {
 	height: 600px;
+	margin-left: 2px;
+	max-width: 510px;
 }
 .section-card .slider-card-nav {
 	height: 510px;
@@ -2705,7 +2707,7 @@ input[type=number]
 	padding-top: 60px;
 }
 .col_right-card {
-	padding-left: 80px;
+	padding-left: 0px;
 }
 .modal-wrap_detale {
 	padding: 43px 70px;
@@ -4639,4 +4641,18 @@ color: #636480;
 }
 .modal-wrap_bonus-card .link {
 	padding-bottom: 3px;
+}
+.item-look,
+.item-product__image {
+	overflow: hidden;
+}
+.item-look > img,
+.item-product__image img {
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.item-look:hover > img,
+.item-product:hover .item-product__image img {
+	transform: scale(1.1);
 }
