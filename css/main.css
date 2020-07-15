@@ -4675,3 +4675,6 @@ color: #636480;
 	height: auto;
 	display: block;
 }
+.modal-wrap_authorization .item-form_big {
+	margin-bottom: 20px;
+}
