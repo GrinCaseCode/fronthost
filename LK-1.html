@@ -21,8 +21,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.58" />
-	<link rel="stylesheet" href="css/media.css?ver=1.58" />
+	<link rel="stylesheet" href="css/main.css?ver=1.70" />
+	<link rel="stylesheet" href="css/media.css?ver=1.70" />
 </head>
 <body>
 
@@ -60,10 +60,11 @@
 					</div><!-- END header_right -->
 					<div class="mob">
 						<ul class="main_nav">
+							<li><a href="/shops/">интернет-Магазины</a></li>
 							<li><a href="/shops/">Магазины</a></li>
-							<li><a href="/brands/">Бренды</a></li>
-							<li><a href="/wardrobe/">Образы</a></li>
+							<li><a href="/brands/">О брендах</a></li>
 							<li><a href="/club_origami/">Клуб ORIGAMI</a></li>
+							<li><a href="/wardrobe/">мой гардероб</a></li>
 						</ul><!-- END main_nav -->
 					</div><!-- END mob -->
 				</div><!-- END header_content -->
@@ -94,14 +95,9 @@
 			</div><!-- END header -->
 		</div>
 
-		<div class="bonus_container">
-			<div class="wrapper">
-				<p>Купите 3 вещи и получите скидку 40% на 4 вещь</p>
-				<a href="#" class="bonus_btn">Узнать подробнее</a>
-			</div>
-		</div>
 
-		<div class="container">
+
+		<div class="container hidden_breadcumbs">
 			<p class="breadcrumbs"><a href="/" title="Главная">Главная</a></p>
 		</div>
 
@@ -123,30 +119,30 @@
 								<p>Для получения преимуществ и дополнительной скидки в клубе ORIGAMI просим вас заполнить анкету. <br>Вы получите дополнительный процент скидки за заполнение информации о себе</p>
 							</div>
 							<div class="row row_min">
-								<div class="col-xl-4 col-lg-6">
+								<div class="col-xl-4 col-lg-6 col-sm-6">
 									<div class="item-form item-form_big">
 										<input type="text" value="Мария " disabled="disabled" required="required">
 									</div>
 								</div>
-								<div class="col-xl-4 col-lg-6">
+								<div class="col-xl-4 col-lg-6 col-sm-6">
 									<div class="item-form item-form_big">
 										<input type="text" value="Аненкова " disabled="disabled" required="required">
 									</div>
 								</div>
-								<div class="col-xl-4 col-lg-6">
+								<div class="col-xl-4 col-lg-6 col-sm-6">
 									<div class="item-form item-form_big">
 										<input type="text" value="+7   925 556 8877 " disabled="disabled" class="input-phone" required="required">
 									</div>
 								</div>
 							</div>
 							<div class="row row_min align-items-center row_email-lk">
-								<div class="col-xl-4 col-lg-6">
+								<div class="col-xl-4 col-lg-6 col-sm-6">
 									<div class="text text_sale"><div class="icon-sale"></div>Электронная почта</div>
 									<div class="item-form item-form_big">
 										<input type="email" value="maria98@mail.ru " required="required">
 									</div>
 								</div>
-								<div class="col-xl-6 col-lg-6">
+								<div class="col-xl-6 col-lg-6 col-sm-6">
 									<div class="text text_right-sale">
 										<p>Получите дополнительный процент скидки за ответ на этот вопрос и покупку детской одежды в наших магазинах</p>
 									</div>
@@ -176,10 +172,10 @@
 									</div>
 								</div>
 							</div>
-							<div class="checkbox checkbox_main">
+							<div class="checkbox checkbox_main checkbox_sale">
 								<label>
 									<input type="checkbox" required="required" checked="checked" />
-									<span>Подписка на уведолмения об акциях <div class="icon-sale icon-sale_right"></div></span>
+									<span>Подписка на уведомления об акциях <div class="icon-sale icon-sale_right"></div></span>
 								</label>
 							</div>
 							<div class="checkbox-descr">вы можете выбрать один или несколько магазинов, предложения которых будут приходить вам в уведомлениях</div>
@@ -237,12 +233,12 @@
 							</ul>
 							<div class="title-input">адрес</div>
 							<div class="row row_inputs-lk">
-								<div class="col-xl-4 col-lg-6 col-xl-4_min">
+								<div class="col-xl-4 col-lg-6 col-xl-4_min col-sm-6">
 									<div class="item-form item-form_big">
 										<input type="text" placeholder="Город " required="required">
 									</div>
 								</div>
-								<div class="col-xl-5 col-lg-6 col-xl-5_min">
+								<div class="col-xl-5 col-lg-6 col-xl-5_min col-sm-6">
 									<div class="item-form item-form_big">
 										<input type="text" placeholder="Улица " required="required">
 									</div>
@@ -266,7 +262,7 @@
 								</div>
 							</div>
 							<div class="row row_phone-lk">
-								<div class="col-xl-6 col-lg-8">
+								<div class="col-xl-6 col-lg-8 col-sm-6">
 									<div class="item-form item-form_big">
 										<input type="text" placeholder="+7 (123) 456 7899" class="input-phone" required="required">
 										<div class="item-form__descr">например +7 922 588 1231</div>
@@ -291,14 +287,14 @@
 							</div>
 							<div class="title-input">Изменение пароля</div>
 							<div class="row row_min">
-								<div class="col-xl-4 col-lg-6">
+								<div class="col-xl-4 col-lg-6 col-sm-6">
 									<div class="item-form item-form_big">
 										<div class="item-form_top-descr">Новый пароль</div>
 										<input type="password" required="required">
 										<div class="item-form__descr">пароль должен быть не менее 6 символов</div>
 									</div>
 								</div>
-								<div class="col-xl-4 col-lg-6">
+								<div class="col-xl-4 col-lg-6 col-sm-6">
 									<div class="item-form item-form_big">
 										<div class="item-form_top-descr">Подтверждение нового пароля</div>
 										<input type="password" required="required">
@@ -324,7 +320,7 @@
 
 			<ul class="footer_nav">
 				<li>
-					<a href="/shops/">Интернет-магазин</a>
+					<a href="/shops/">Интернет-магазины</a>
 				</li>
 				<li>
 					<a href="/shops/">Магазины</a>
@@ -381,7 +377,8 @@
 <script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 <script src="libs/jscrollpane/jquery.jscrollpane.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
-<script src="js/common.js?ver=1.50"></script>
+<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+<script src="js/common.js?ver=1.70"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
