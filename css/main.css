@@ -239,7 +239,7 @@ p {
 }
 .item-product__image {
 	height: 390px;
-	padding: 20px;
+	padding: 0px;
 	position: relative;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -1645,7 +1645,7 @@ html.index {
 	justify-content: flex-start;
 	line-height: 15px;
 	min-height: 40px;
-	max-width: 210px;
+	max-width: 220px;
 	padding-left: 70px;
 }
 
@@ -2089,6 +2089,10 @@ html.index {
 .item-form {
 	position: relative;
 }
+.jqselect {
+	width: 100%;
+}
+.jq-selectbox__select-text,
 .fl_upld label,
 .item-form textarea,
 .item-form input,
@@ -2112,7 +2116,17 @@ select::-ms-expand {
 	display: none;
 
 }
-.item-form_select::after {
+.jq-selectbox__select-text {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	display: block;
+	padding-right: 30px;
+	width: 100% !important;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.jq-selectbox__trigger::after {
 	position: absolute;
 	display: block;
 	content: " ";
@@ -2129,6 +2143,28 @@ select::-ms-expand {
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
 }
+.jq-selectbox__dropdown {
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 5px #ccc;
+}
+.jq-selectbox__dropdown li {
+	font-size: 14px;
+	padding: 7px 20px;
+	line-height: 20px;
+	font-family: 'Montserrat Regular';
+	color: #636480;
+	cursor: pointer;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.jq-selectbox__dropdown li:hover,
+.jq-selectbox__dropdown li.sel {
+	background-color: #FEB412;
+	color: #fff;
+}
 .subtitle-card + .item-form {
 	margin-top: 10px;
 }
@@ -2142,6 +2178,7 @@ select::-ms-expand {
 .price-card {
 	font-size: 22px;
 	line-height: 27px;
+	white-space: nowrap;
 	text-transform: uppercase;
 	font-family: 'Montserrat Bold';
 	color: #090A22;
@@ -2252,6 +2289,9 @@ select::-ms-expand {
 }
 .btn-big-modal:hover {
 	background-color: #000;
+}
+.slider-card-brands {
+	max-width: 310px;
 }
 .slider-card-brands .slick-arrow {
 	top: -31px;
@@ -2455,7 +2495,7 @@ input[type=number]
 	padding-left: 35px;
 }
 .col_size-basket .item-form {
-	max-width: 120px;
+	max-width: 95px;
 }
 .item-basket__top {
 	padding-bottom: 25px;
@@ -2479,7 +2519,7 @@ input[type=number]
 	font-size: 14px;
 	line-height: 17px;
 	text-transform: uppercase;
-	font-family: 'Montserrat Bold';/
+	font-family: 'Montserrat Bold';
 	color: #090A22;
 }
 .form-basket__price span {
@@ -2565,6 +2605,8 @@ input[type=number]
 .form-basket .btn-yellow {
 	margin-top: 40px;
 	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
 }
 .available-bonus {
 	font-size: 14px;
@@ -2785,12 +2827,17 @@ input[type=number]
 .section-checkout .title-section {
 	padding-bottom: 60px;
 }
+.item-form_big .jq-selectbox__select-text,
 .fl_upld label,
 .item-form_big textarea,
 .item-form_big input,
 .item-form_big select {
 	height: 60px;
 	border: 1px solid #BDBED0;
+}
+.item-form_big .jq-selectbox__select-text {
+	padding-top: 17px;
+	padding-bottom: 12px;
 }
 .item-form textarea {
 	padding-top: 20px;
@@ -3002,6 +3049,7 @@ input[type=number]
 }
 .total-checkout {
 	padding: 40px;
+	padding-bottom: 5px;
 	background-color: #F8F8FA;
 }
 .total-checkout__title {
@@ -3162,7 +3210,7 @@ input[type=number]
 }
 .bottom-finish__block a {
 	font-size: 14px;
-	line-height: 20px;
+	line-height: 25px;
 	padding-left: 60px;
 	display: inline-block;
 	align-items: center;
@@ -3865,7 +3913,7 @@ input[type=number]
 	font-size: 14px;
 	line-height: 25px;
 	padding-left: 29px;
-	padding-right: 113px;
+	padding-right: 100px;
 	position: relative;
 	text-transform: uppercase;
 	cursor: pointer;
@@ -3944,8 +3992,14 @@ input[type=number]
 	margin-top: 0;
 }
 .item-dropdown__child {
-	margin-top: 13px;
+	margin-top: 25px;
 	display: none;
+}
+.item-dropdown__child .item-dropdown__child {
+	margin-top: 13px;
+}
+.item-dropdown__child .item-dropdown__name {
+	padding-right: 0;
 }
 .clear-dropdown {
 	font-size: 12px;
@@ -4319,9 +4373,11 @@ color: #BDBED0;
 	transition: all 0.3s;
 	opacity: 0;
 }
-.tabs-lk li a:hover,
+.tabs-lk li a:hover {
+	color: #000;
+}
 .tabs-lk li.active a {
-	 text-shadow: 0 0 .65px #000, 0 0 .65px #000;
+font-family: 'Montserrat Bold';
 	color: #000000;
 }
 .tabs-lk li.active a::after {
@@ -4334,6 +4390,7 @@ color: #BDBED0;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	object-position: top;
 	font-family: 'object-fit: cover;';
 }
 .btn-estimate {
@@ -4514,7 +4571,7 @@ color: #090A22;
 }
 .privilege {
 	padding: 40px 60px;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 	min-height: 100%;
 	background-color: #F8F8FA;
 }
@@ -4550,7 +4607,7 @@ color: #636480;
 	background-size: 100% 100%;
 }
 .privilege .link {
-	margin-top: 10px;
+	margin-top: 25px;
 }
 .privilege__image img {
 	max-width: 100%;
@@ -4558,6 +4615,7 @@ color: #636480;
 	display: block;
 }
 .privilege .text-min {
+	line-height: 20px;
 	padding-bottom: 15px;
 }
 .slider-offer-lk__item .btn-main_standart {
@@ -4700,4 +4758,60 @@ color: #636480;
 .bottom-social-popup p {
 	max-width:262px;
 	display: inline-block;
+}
+.form-basket .btn-yellow {
+	max-width: 290px;
+}
+.total-list {
+	position: relative;
+}
+.total-list::after {
+    position: absolute;
+    display: block;
+    content: " ";
+    top: 0;
+    width: 93px;
+    height: 100%;
+    right: 4px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 1)));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 7%, #f8f8fad6 28%);
+}
+.item-finish .text {
+	max-width: 300px;
+}
+.type-checks li:last-child .type-check span {
+	margin-right: 0;
+}
+.header_container {
+	max-width: 1440px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.header_container .header {
+	padding-left: 0;
+	padding-right: 0;
+}
+.type-check_icon-5 span {
+	padding-left: 50px;
+}
+.type-catalog li:last-child .type-check span {
+	margin-right: 0;
+}
+.privilege__image {
+	margin-bottom: -20px;
+}
+.privilege .col-lg-5 {
+	padding-top: 35px;
+}
+.btn-main_border span {
+	background-color: transparent;
+}
+.btn-main_border {
+	background: none;
+	border: 4px solid;
+    border-image: linear-gradient(90deg, #FFB911 0%, #F14922 51.64%, #FFB911 104.36%);
+    	border-image-slice: 1;
+}
+.btn-main_border:hover {
+	border: none;	
 }
