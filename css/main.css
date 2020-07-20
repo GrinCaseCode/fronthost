@@ -4815,3 +4815,14 @@ color: #636480;
 .btn-main_border:hover {
 	border: none;	
 }
+
+.slider-card-for__item {
+	    border: 1px solid #EDEDED;
+	background-color: transparent;
+}
+.slider-card-nav__item {
+	background-color: transparent;
+}
+.slider-card-nav__item {
+	 border: 1px solid #EDEDED;
+}
